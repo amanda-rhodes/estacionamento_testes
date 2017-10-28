@@ -34,6 +34,15 @@ namespace estacionamento_testes
         }
 
         [TestCase]
+        public void novoVeiculoHorarioInvalido()
+        {
+            Estacionamento est = new Estacionamento(1);
+            int hora = 25;
+            int min = 60;
+            Assert.AreEqual(true, est.novoVeiculo("b", hora, min));
+        }
+
+        [TestCase]
         public void cheioTrueTeste()
         {
             Estacionamento est = new Estacionamento(1);
