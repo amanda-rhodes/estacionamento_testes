@@ -67,5 +67,17 @@ namespace estacionamento_testes
             est.novoVeiculo("a", 10, 10);
             Assert.IsFalse(est.cheio());
         }
+
+        [TestCase]
+        public void saidaPlacaInvalida()
+        {
+            Estacionamento est = new Estacionamento(5);
+            est.novoVeiculo("a", 10, 10);
+            est.novoVeiculo("b", 8, 23);
+            est.novoVeiculo("c", 9, 15);
+            est.novoVeiculo("d", 12, 30);
+            Assert.AreEqual(-1 ,est.saidaVeiculo("e"));
+        }
+
     }
 }
