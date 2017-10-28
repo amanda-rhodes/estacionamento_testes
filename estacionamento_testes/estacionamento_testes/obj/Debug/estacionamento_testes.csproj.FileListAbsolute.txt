@@ -1,0 +1,8 @@
+C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\estacionamento_testes.exe.config
+C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\estacionamento_testes.exe
+C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\estacionamento_testes.pdb
+C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\nunit.framework.dll
+C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\nunit.framework.xml
+C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.csprojResolveAssemblyReference.cache
+C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.exe
+C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.pdb
