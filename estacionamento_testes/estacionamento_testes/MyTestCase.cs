@@ -39,9 +39,19 @@ namespace estacionamento_testes
             Estacionamento est = new Estacionamento(1);
             int hora = 25;
             int min = 60;
-            Assert.AreEqual(true, est.novoVeiculo("b", hora, min));
+            Assert.AreEqual(false, est.novoVeiculo("b", hora, min));
         }
 
+        [TestCase]
+        public void calcularValorTeste()
+        {
+            Estacionamento est = new Estacionamento(5);
+            est.novoVeiculo("abcd", 9, 30);
+            Veiculo v = est.buscarVeiculo("abcd");
+            Assert.AreEqual(est.saidaVeiculo("abcd"), est.calcularValor(v));
+        }
+
+        
         [TestCase]
         public void cheioTrueTeste()
         {

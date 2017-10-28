@@ -16,8 +16,7 @@ namespace estacionamento_testes
 
         public Veiculo(string _placa)
         {
-            Placa = _placa;
+             Placa = _placa;
         }
-
     }
 }
