@@ -36,26 +36,33 @@ namespace estacionamento_testes
 
         public bool novoVeiculo(string placa, int hora, int minutos)
         {
-            if (string.IsNullOrEmpty(placa))
-                throw new ArgumentNullException(placa, "o valor do parâmetro não pode ser null");
-            else if (hora < 0 || hora > 23)
-                throw new Exception("o valor do parâmentro não pode ser negativo ou maior que 23");
-            else if (minutos < 0 || minutos > 59)
-                throw new Exception("o valor do parâmentro não pode ser negativo ou maior que 59");
-            else
+            try
             {
-                Veiculo novo = new Veiculo(placa);
-                novo.HoraEntrada = new DateTime(1, 1, 1, hora, minutos, 0);
-
-                if (cheio() == false)
+                if (string.IsNullOrEmpty(placa))
+                    throw new ArgumentNullException(placa, "o valor do parâmetro não pode ser null");
+                else if (hora < 0 || hora > 23)
+                    throw new Exception("o valor do parâmentro não pode ser negativo ou maior que 23");
+                else if (minutos < 0 || minutos > 59)
+                    throw new Exception("o valor do parâmentro não pode ser negativo ou maior que 59");
+                else
                 {
-                    novo.HoraEntrada = DateTime.Now;
-                    Estacionados.Add(novo);
-                    return true;
-                }
-            }
+                    Veiculo novo = new Veiculo(placa);
+                    novo.HoraEntrada = new DateTime(1, 1, 1, hora, minutos, 0);
 
-            return false;
+                    if (cheio() == false)
+                    {
+                        novo.HoraEntrada = DateTime.Now;
+                        Estacionados.Add(novo);
+                        return true;
+                    }
+                }
+                return false;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
         }
 
         public double calcularValor(Veiculo veic)
@@ -84,6 +91,18 @@ namespace estacionamento_testes
         {
             foreach (Veiculo veic in Estacionados)
                 Console.WriteLine(veic.Placa);
+        }
+
+        public Veiculo buscarVeiculo(string placa)
+        {
+            foreach (Veiculo veic in Estacionados)
+            {
+                if (veic.Placa.Equals(placa))
+                {
+                    return veic;
+                }
+            }
+            return default(Veiculo);
         }
     }
 }

@@ -34,6 +34,25 @@ namespace estacionamento_testes
         }
 
         [TestCase]
+        public void novoVeiculoHorarioInvalido()
+        {
+            Estacionamento est = new Estacionamento(1);
+            int hora = 25;
+            int min = 60;
+            Assert.AreEqual(false, est.novoVeiculo("b", hora, min));
+        }
+
+        [TestCase]
+        public void calcularValorTeste()
+        {
+            Estacionamento est = new Estacionamento(5);
+            est.novoVeiculo("abcd", 9, 30);
+            Veiculo v = est.buscarVeiculo("abcd");
+            Assert.AreEqual(est.saidaVeiculo("abcd"), est.calcularValor(v));
+        }
+
+        
+        [TestCase]
         public void cheioTrueTeste()
         {
             Estacionamento est = new Estacionamento(1);
@@ -48,5 +67,17 @@ namespace estacionamento_testes
             est.novoVeiculo("a", 10, 10);
             Assert.IsFalse(est.cheio());
         }
+
+        [TestCase]
+        public void saidaPlacaInvalida()
+        {
+            Estacionamento est = new Estacionamento(5);
+            est.novoVeiculo("a", 10, 10);
+            est.novoVeiculo("b", 8, 23);
+            est.novoVeiculo("c", 9, 15);
+            est.novoVeiculo("d", 12, 30);
+            Assert.AreEqual(-1 ,est.saidaVeiculo("e"));
+        }
+
     }
 }
