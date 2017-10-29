@@ -1,0 +1,49 @@
+https://www.youtube.com/watch?v=f2NrKazjWes
+
+Passo a passo para criar testes com NUnit:
+em Gerenciador de Soluções
+	botão direito na pasta 'estacionamento_cliente' > Gerenciar pacotes do nuget
+Aba 'Procurar'
+Pesquisar por 'nunit'
+	Instalar - ok
+	
+em Gerenciador de Soluções
+	botão direito na pasta 'estacionamento_cliente' > Rebuild/Recompilar
+	
+em Ferramentas
+	extensões e atualizações > online
+	pesquisar por 'nunit' no canto superior direito
+	baixar nunit 3 test adapter
+	reiniciar visual
+	
+(JÁ FEITOS NO PROJETO - NÃO PRECISA REFAZER)
+em Gerenciador de Soluções
+	botão direito na pasta 'estacionamento_cliente' > adicionar classe (mytestecase)
+	escrever [TestFixture] na linha anterior à identificação da class
+	adicionar método de teste void com identificação sobre o método a ser testado
+	escrever [TestCase] na linha anterior à identificação do método
+	
+	Exemplo:
+	
+	[TestFixture]
+    class MyTestCase
+    {
+        [TestCase]
+        public void Add()
+        {
+            Calculo matematica = new Calculo();
+            Assert.AreEqual(31, matematica.add(20,11));
+        }
+
+        [TestCase]
+        public void Sub()
+        {
+            Calculo matematica = new Calculo();
+            Assert.AreEqual(10, matematica.sub(20, 10));
+        }
+    }
+
+(FAZER ISTO PARA VERIFICAR COMO FUNCIONAM OS TESTES)
+Testar > Executar > Todos os testes
+
+	
