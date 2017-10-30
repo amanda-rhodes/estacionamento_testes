@@ -41,9 +41,9 @@ namespace estacionamento_testes
                 if (string.IsNullOrEmpty(placa))
                     throw new ArgumentNullException(placa, "o valor do parâmetro não pode ser null");
                 else if (hora < 0 || hora > 23)
-                    throw new Exception("o valor do parâmentro não pode ser negativo ou maior que 23");
+                    throw new Exception("o valor do parâmetro não pode ser negativo ou maior que 23");
                 else if (minutos < 0 || minutos > 59)
-                    throw new Exception("o valor do parâmentro não pode ser negativo ou maior que 59");
+                    throw new Exception("o valor do parâmetro não pode ser negativo ou maior que 59");
                 else
                 {
                     Veiculo novo = new Veiculo(placa);

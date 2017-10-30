@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Estacionamento.cs" />
-    <Compile Include="ExceptionAttribute.cs" />
     <Compile Include="MyTestCase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
