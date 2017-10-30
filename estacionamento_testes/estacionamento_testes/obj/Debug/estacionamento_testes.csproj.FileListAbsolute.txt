@@ -6,3 +6,12 @@ C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_te
 C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.csprojResolveAssemblyReference.cache
 C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.exe
 C:\Users\Zamur\Documents\Desenvolvimento\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.pdb
+C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\estacionamento_testes.exe.config
+C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\estacionamento_testes.exe
+C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\estacionamento_testes.pdb
+C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\nunit.framework.dll
+C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\nunit.framework.xml
+C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.csproj.CoreCompileInputs.cache
+C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.exe
+C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.pdb
+C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.csprojResolveAssemblyReference.cache

@@ -17,6 +17,7 @@ namespace estacionamento_testes
             Console.WriteLine(meuEstacionamento.novoVeiculo("abc3", 10, 3));
             Console.WriteLine(meuEstacionamento.novoVeiculo("abc4", 10, 4));
 
+            Console.WriteLine("----------");
             meuEstacionamento.listarVeiculos();
 
             Console.WriteLine(meuEstacionamento.saidaVeiculo("abc2"));
