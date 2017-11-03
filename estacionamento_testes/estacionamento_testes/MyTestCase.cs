@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace estacionamento_testes
 {
@@ -11,7 +6,7 @@ namespace estacionamento_testes
     /Quando você menciona esse atributo para uma classe em seu projeto
     /a aplicação Test Runner irá procurar por métodos de testes*/
     [TestFixture]
-    class MyTestCase
+    public class MyTestCase
     {
         /*O atributo de Test indica que um método dentro de um Testfixture deve ser executado 
         pela aplicação Test Runner. O método deve ser público e retornar void.*/
@@ -22,7 +17,7 @@ namespace estacionamento_testes
             /*A classe Assert é usada para confirmar se os casos de testes estão 
             * produzindo o resultado esperado ou não usando métodos auxiliares 
             * como AreEqual() ou AreNotEqual().*/
-            Assert.IsTrue(est.novoVeiculo("a", 10, 10));
+            Assert.IsTrue(est.novoVeiculo("a1", 10, 10));
         }
 
         [TestCase]
@@ -46,9 +41,9 @@ namespace estacionamento_testes
         public void calcularValorTeste()
         {
             Estacionamento est = new Estacionamento(5);
-            est.novoVeiculo("abcd", 9, 30);
-            Veiculo v = est.buscarVeiculo("abcd");
-            Assert.AreEqual(est.saidaVeiculo("abcd"), est.calcularValor(v));
+            est.novoVeiculo("abcd1", 9, 30);
+            Veiculo v = est.buscarVeiculo("abcd1");
+            Assert.AreEqual(est.saidaVeiculo("abcd1"), est.calcularValor(v));
         }
 
         
@@ -56,7 +51,7 @@ namespace estacionamento_testes
         public void cheioTrueTeste()
         {
             Estacionamento est = new Estacionamento(1);
-            est.novoVeiculo("a", 10, 10);
+            est.novoVeiculo("a1", 10, 10);
             Assert.IsTrue(est.cheio());
         }
 
@@ -77,6 +72,14 @@ namespace estacionamento_testes
             est.novoVeiculo("c", 9, 15);
             est.novoVeiculo("d", 12, 30);
             Assert.AreEqual(-1 ,est.saidaVeiculo("e"));
+        }
+
+        [TestCase]
+        public void entradaPlacaValida()
+        {
+            Estacionamento est = new Estacionamento(5);
+            est.placaValida("abc123");
+            Assert.AreEqual(true ,est.placaValida("abc123"));
         }
 
     }

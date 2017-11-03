@@ -15,3 +15,18 @@ C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_teste
 C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.exe
 C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.pdb
 C:\Users\Pedro Amado\Downloads\Testes\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.csprojResolveAssemblyReference.cache
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\estacionamento_testes.exe.config
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\estacionamento_testes.exe
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\estacionamento_testes.pdb
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\nunit.framework.dll
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\nunit.framework.xml
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.csprojResolveAssemblyReference.cache
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.exe
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\obj\Debug\estacionamento_testes.pdb
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\nunit.engine.dll
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\nunit.engine.api.dll
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\Mono.Cecil.dll
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\Dex\Documents\estacionamento_testes\estacionamento_testes\estacionamento_testes\bin\Debug\Mono.Cecil.Rocks.dll

@@ -20,7 +20,7 @@ namespace estacionamento_testes
         public Estacionamento(int _numVagas)
         {
             if (_numVagas < 1)
-                throw new Exception("o valor do parâmentro não pode ser menor do que 1 (um)");
+                throw new Exception("o valor do parâmetro não pode ser menor do que 1 (um)");
             else
             {
                 NumVagas = _numVagas;
@@ -44,6 +44,8 @@ namespace estacionamento_testes
                     throw new Exception("o valor do parâmetro não pode ser negativo ou maior que 23");
                 else if (minutos < 0 || minutos > 59)
                     throw new Exception("o valor do parâmetro não pode ser negativo ou maior que 59");
+                else if (!placaValida(placa))
+                       throw new Exception("a placa precisa ter pelo menos 1 (um) inteiro e 1(uma) letra");
                 else
                 {
                     Veiculo novo = new Veiculo(placa);
@@ -103,6 +105,18 @@ namespace estacionamento_testes
                 }
             }
             return default(Veiculo);
+        }
+
+        public bool placaValida(string placa)
+        {
+            bool achouNum = false, achouLet = false;
+            foreach (char t in placa)
+            {
+                if (char.IsNumber(t)) achouNum = true;
+                else achouLet = true;
+            }
+            if (achouNum && achouLet) return true;
+            else return false;
         }
     }
 }
