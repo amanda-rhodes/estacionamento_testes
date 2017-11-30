@@ -1,37 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace estacionamento_testes
 {
     public class Estacionamento
     {
-        private int numVagas;
-        private List<Veiculo> estacionados;
         private const double valorSegundos = 3.50;
 
-        public int NumVagas { get => numVagas; set => numVagas = value; }
-        public List<Veiculo> Estacionados { get => estacionados; set => estacionados = value; }
+        public int NumVagas { get; set; }
+
+        public List<Veiculo> Estacionados { get; set; }
 
         public static double ValorHora => valorSegundos;
 
-        public Estacionamento(int _numVagas)
+        public Estacionamento(int numVagas)
         {
-            if (_numVagas < 1)
+            if (numVagas < 1)
                 throw new Exception("o valor do parâmetro não pode ser menor do que 1 (um)");
             else
             {
-                NumVagas = _numVagas;
+                NumVagas = numVagas;
                 Estacionados = new List<Veiculo>();
             }
         }
 
         public bool cheio()
         {
-            if (Estacionados.Count == NumVagas) return true;
-            return false;
+            return Estacionados.Count == NumVagas;
         }
 
         public bool novoVeiculo(string placa, int hora, int minutos)
@@ -48,17 +43,13 @@ namespace estacionamento_testes
                        throw new Exception("a placa precisa ter pelo menos 1 (um) inteiro e 1(uma) letra");
                 else
                 {
-                    Veiculo novo = new Veiculo(placa);
-                    novo.HoraEntrada = new DateTime(1, 1, 1, hora, minutos, 0);
+                    Veiculo novo = new Veiculo(placa) {HoraEntrada = new DateTime(1, 1, 1, hora, minutos, 0)};
 
-                    if (cheio() == false)
-                    {
-                        novo.HoraEntrada = DateTime.Now;
-                        Estacionados.Add(novo);
-                        return true;
-                    }
+                    if (cheio() != false) return false;
+                    novo.HoraEntrada = DateTime.Now;
+                    Estacionados.Add(novo);
+                    return true;
                 }
-                return false;
             }
             catch(Exception e)
             {
@@ -75,15 +66,12 @@ namespace estacionamento_testes
 
         public double saidaVeiculo(string placa)
         {
-            double valor = 0;
             foreach (Veiculo veic in Estacionados)
             {
-                if (veic.Placa.Equals(placa))
-                {
-                    valor = calcularValor(veic);
-                    estacionados.Remove(veic);
-                    return valor;
-                }
+                if (!veic.Placa.Equals(placa)) continue;
+                var valor = calcularValor(veic);
+                Estacionados.Remove(veic);
+                return valor;
             }
 
             return -1;
@@ -115,8 +103,9 @@ namespace estacionamento_testes
                 if (char.IsNumber(t)) achouNum = true;
                 else achouLet = true;
             }
-            if (achouNum && achouLet) return true;
-            else return false;
+            if (achouNum && achouLet)
+                return true;
+            return false;
         }
     }
 }

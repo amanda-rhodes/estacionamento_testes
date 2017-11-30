@@ -4,7 +4,7 @@ namespace estacionamento_testes
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Estacionamento meuEstacionamento = new Estacionamento(3);
 
